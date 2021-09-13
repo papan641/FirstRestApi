@@ -1,8 +1,5 @@
 package com.jerseydemo.JerseyDemo;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -35,7 +32,7 @@ public class BloggerPostController {
 	@Path("/{postId}")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public PostDetails edit(PostDetails user,@PathParam("postId") int postId) {
-		return service.editPost(user,postId);
+	public PostDetails edit(PostDetails user, @PathParam("postId") int postId) {
+		return service.editPost(user, postId);
 	}
 }
