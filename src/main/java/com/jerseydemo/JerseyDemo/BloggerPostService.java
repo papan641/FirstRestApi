@@ -49,6 +49,7 @@ public class BloggerPostService {
 	}
 
 	public PostDetails editPost(PostDetails postDetails, int postId) {
+		System.out.println(postDetails +" "+ postId);
 		// updated query
 		return postDetails;
 	}
